@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main() {
+    int num50, num80, num130;
+    
+    printf("\n\nElaborar un programa que pida 3 numeros y los muestre en pantalla de menor a mayor");
+    printf("\n\nIngrese el primer numero: ");
+    scanf("%d", &num50);
+    
+    printf("\n\nIngrese el segundo numero: ");
+    scanf("%d", &num80);
+    
+    printf("\n\n\nIngrese el tercer numero: ");
+    scanf("%d", &num130);
+    printf("\n\nLos numeros ordenados de menor a mayor son: %d, %d, %d\n", num50, num80, num130);
+    if (num50 <= num80 && num50 <= num130) { // num50 es el menor
+        printf("%d ", num50);
+        
+        if (num80 <= num130) {
+            printf("%d %d\n", num80, num130);
+        } else {
+            printf("%d %d\n", num130, num80);
+        }
+    }
+    else if (num80 <= num50 && num80 <= num130) { // num2 es el menor
+            printf("%d ", num80);
+
+            if (num50 <= num130) {
+                printf("%d %d\n", num50, num130);
+            } else {
+                printf("%d %d\n", num130, num50);
+            }
+        }
+    else { // num3 es el menor
+            printf("%d ", num130);
+
+            if (num50 <= num80) {
+                printf("%d %d\n", num50, num80);
+            } else {
+                printf("%d %d\n", num80, num50);
+            }
+        }
+    
+    return 0;
+}
