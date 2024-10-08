@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int e;
+    printf("Titulo");
+    printf("Cual es tu estación del año favorita? 1.Primavera 2.Verano 3.Otoño 4.Invierno");
+    scanf("%d",& e);
+    switch (e) {
+        case 1:
+            printf("Primavera");
+            break;
+        case 2:
+            printf("Verano");
+            break;
+        case 3:
+            printf("Otoño");
+            break;
+        case 4:
+            printf("Invierno");
+            break;
+        default:
+            printf("Option Invalida");
+            break;
+    }
+    
+}
