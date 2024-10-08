@@ -1,0 +1,22 @@
+//
+//  main.cpp
+//  Calificación
+//
+//  Created by Andrea Alessandra Ortiz Jaime on 07/10/24.
+//
+
+#include <stdio.h>
+
+int main() {
+    float cal;
+    
+    printf("Programa que indique si un estudiante aprueba un Examen");
+    printf("Ingrese la calificacion que obtuvo ");
+     scanf("%f",& cal);
+        if (cal >= 8) {
+            printf("Aprobado");
+        }
+       else if (cal >=6) {
+                printf("Reprobado");
+            }
+}
