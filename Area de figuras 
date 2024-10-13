@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int e;
+    float lado, base, altura, radio, area;
+
+    printf("\n\nElaborar un programa que eligiendo la figura nos diga el Area.");
+    printf("\n\nIngrese la figura: 1.Cuadrado 2.Rectangulo 3.Triangulo 4.Circulo\n");
+    scanf("%d", &e);  // Lectura de la opción
+
+    switch (e) {
+    case 1:
+        printf("\n\nIngrese el lado del cuadrado: ");
+        scanf("%f", &lado);
+        area = lado * lado;
+        printf("El area del cuadrado es: %.2f\n", area);
+        break;
+    case 2:
+        printf("\n\nIngresa la base del rectangulo: ");
+        scanf("%f", &base);
+        printf("\n\nIngresa la altura del rectangulo: ");
+        scanf("%f", &altura);
+        area = base * altura;
+        printf("\nEl area del rectangulo es: %.2f\n", area);
+        break;
+    case 3:
+        printf("\n\nIngresa la base del triangulo: ");
+        scanf("%f", &base);
+        printf("\n\nIngresa la altura del triangulo: ");
+        scanf("%f", &altura);
+        area = (base * altura) / 2;
+        printf("\n\nEl area del triangulo es: %.2f\n", area);
+        break;
+    case 4:
+        printf("\n\nIngresa el radio del circulo: ");
+        scanf("%f", &radio);
+        area = M_PI * radio * radio;  // M_PI es la constante pi en math.h
+        printf("\n\nEl area del circulo es: %.2f\n", area);
+        break;
+    default:
+        printf("\n\nOpcion invalida. Ingresa una opción entre 1 y 4 por favor.\n");
+        break;
+    }
+
+    return 0;
+}
