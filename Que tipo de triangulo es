@@ -1,0 +1,33 @@
+//
+//  main.cpp
+//  Adivina que triangulo
+//
+//  Created by Andrea Alessandra Ortiz Jaime on 10/10/24.
+//
+
+#include <stdio.h>
+
+int main ()
+{
+    int primerlado,segundolado,tercerlado ;
+    
+    printf("\n\nPrograma para saber que tipo de triangulo es: ");
+    printf("\n\nla medida del primer lado es: ");
+    scanf("%d", &primerlado );
+    printf("\n\nla medida del segundo lado es: ");
+        scanf("%d", &segundolado);
+        printf("\n\nla medida del tercer lado es: ");
+        scanf("%d", &tercerlado);
+    if (primerlado == segundolado && segundolado == tercerlado)
+           {
+           printf("\n\nEl triángulo es equilátero.");
+       } else if (primerlado == segundolado || primerlado == tercerlado || segundolado == tercerlado) {
+           printf("\n\nEl triángulo es isósceles.");
+       } else {
+           printf("\n\nEl triángulo es escaleno.");
+       }
+  
+       return 0;
+   }
+    
+  
