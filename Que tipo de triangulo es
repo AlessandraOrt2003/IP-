@@ -20,14 +20,13 @@ int main ()
         scanf("%d", &tercerlado);
     if (primerlado == segundolado && segundolado == tercerlado)
            {
-           printf("\n\nEl triángulo es equilátero.");
-       } else if (primerlado == segundolado || primerlado == tercerlado || segundolado == tercerlado) {
-           printf("\n\nEl triángulo es isósceles.");
+           printf("\n\nEl triangulo es equilatero.");
+       } else if (primerlado != segundolado && primerlado != tercerlado && segundolado != tercerlado) {
+           printf("\n\nEl triangulo es escaleno.");
        } else {
-           printf("\n\nEl triángulo es escaleno.");
+           printf("\n\nEl triangulo es isoceles.");
        }
-  
+
        return 0;
    }
     
-  
